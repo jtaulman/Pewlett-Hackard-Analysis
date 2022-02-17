@@ -77,6 +77,8 @@ FROM unique_titles
 GROUP BY title
 ORDER BY COUNT(title) DESC;
 
+SELECT COUNT(title) FROM unique_titles;
+
 SELECT emp_no, first_name, last_name, birth_date
 FROM employees
 
@@ -103,3 +105,7 @@ INNER JOIN titles as ti
 WHERE (de.to_date = '9999-01-01')
 AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no;
+
+SELECT * FROM unique_titles
+SELECT * FROM retiring_titles
+SELECT * FROM mentorship_eligibility
